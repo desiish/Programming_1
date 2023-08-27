@@ -1,5 +1,5 @@
 #include <iostream>
-//string библиотека
+//string Р±РёР±Р»РёРѕС‚РµРєР°
 int myStrlen(const char* str)
 {
 	if (str == nullptr)
@@ -53,9 +53,9 @@ int myStrcmp(const char* str1, const char* str2)
 		return 1;
 }
 
-//String фунцкии
+//String С„СѓРЅРєС†РёРё
 
-//Дали дума е префикс на текст
+//Р”Р°Р»Рё Рµ РїСЂРµС„РёРєСЃ
 bool isPrefix(const char* txt, const char* word)
 {
 	while (*word && *txt)
@@ -67,7 +67,7 @@ bool isPrefix(const char* txt, const char* word)
 	}
 	return !(*word);
 }
-//Дали дума се среща в текст
+//Р”Р°Р»Рё СЃРµ СЃСЂРµС‰Р° РІ С‚РµРєСЃС‚
 bool isInText(const char* txt, const char* word)
 {
 	while (*txt)
@@ -78,7 +78,7 @@ bool isInText(const char* txt, const char* word)
 	}
 	return false;
 }
-//Колко пъти дума се среща в текст
+//РќР°РјРёСЂР° Р±СЂРѕР№ СЃСЂРµС‰Р°РЅРёСЏ РЅР° РґСѓРјР° РІ С‚РµРєСЃС‚
 int getCountInTxt(const char* txt, const char* word)
 {
 	int count = 0;
@@ -90,7 +90,7 @@ int getCountInTxt(const char* txt, const char* word)
 	}
 	return count;
 }
-//Намира и замества дума в текст
+//РќР°РјРёСЂР° Рё Р·Р°РјРµСЃС‚РІР° РґСѓРјР° РІ С‚РµРєСЃС‚
 char* findAndReplace(const char* txt, const char* toReplace, const char* replacement)
 {
 	size_t lenOfTxt = myStrlen(txt);
